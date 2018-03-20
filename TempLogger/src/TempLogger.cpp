@@ -23,10 +23,8 @@ const byte sensorCount = 2;
 const byte avgCount    = 5; //number of readings to take per datapoint
 const long sleepTime   = 300000; //time to sleep between readings in ms
 
-const char* ssid     = "xxxxxx";
-const char* password = "xxxxxxxx";
-const char* host     = "api.thingspeak.com";
-const char* apiKey   = "XXXXXXXXXXXXXXXX"; //API write key from ThingSpeak.com Channel
+// see instructions in config.sample.h
+#include "config.h"
 
 float fields[sensorCount+1];
 
